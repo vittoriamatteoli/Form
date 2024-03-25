@@ -1,101 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Farmy</title>
+    <title>Musical form</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/c38d857281.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- mobile menu -->
-    <div class="mobil-nav-wrapper">
-      <header class="mobile-nav">
-        <h1 style="color: white">FARMY.</h1>
-        <ul class="mobile-nav-list">
-          <a>ABOUT</a
-          ><br />
-          <a>OUR BOXES</a>
-        </ul>
-      </header>
-    </div>
-    <!-- hero-section -->
-    <main class="hero-section">
-      <div class="hero-wrapper">
-        <h1 class="hero-title">HARVESTED FOR YOU</h1>
-        <h2 class="hero-subtitle">
-          Farm-fresh vegetables delivery at your doorstep
-        </h2>
-      </div>
-    </main>
-    <!-- Signup form -->
-    <form action="http://httpbin.org/anything" method="post">
-      <div class="Logo">
-        <h1 style="color: white">FARMY.</h1>
-      </div>
-      <div class="wrapper">
-        <label
-          >name
-          <input type="text" name="First Name" />
-        </label>
 
-        <label
-          >Surname
-          <input type="text" name="Surname" />
-        </label>
-      </div>
-      <label class="input-address"
-        >Address
-        <input type="adress" name="Address" />
-      </label>
-      <div class="wrapper">
-        <label> City<input type="text" name="city" /> </label>
-        <label>
-          Zip Code
-          <input type="number" name="zipcode" />
-        </label>
-      </div>
-      <label class="phone-number">
-        Phone number
-        <input type="tel" name="phonenumber" />
-      </label>
-      <!-- radio buttons -->
-      <div class="radio-wrapper">
-        <label>How Often? </label>
-        <div class="container-radio">
-          <div class="wrapper-choice">
-            <label class="radio-option">
-              Weekly
-              <input type="radio" name="weekly" value="weekly" />
-            </label>
-          </div>
-          <div class="wrapper-choice">
-            <label class="radio-option">
-              Monthly
-              <input type="radio" name="monthly" value="monthly" />
-            </label>
-          </div>
+  <body>
+    <main>
+      <section class="hero-section">
+        <div class="hero-text-wrapper">
+          <h1>Genre Giggle Questionnaire</h1>
+          <h5>Tune In, Turn Up, and Tickle Your Musical Funny Bone!</h5>
+          <p>Have Fun!</p>
         </div>
-      </div>
-      <label class="psw">
-        Password
-        <input type="text" name="Password" />
-      </label>
-      <label class="psw">
-        Repeat Password
-        <input type="Text" name="Password-repeat" />
-      </label>
-      <div class="terms">
-        <label for="conditions"> Accept Terms and Conditions </label>
-        <input id="conditions" type="checkbox" name="Conditions" />
-      </div>
-      <button type="submit" style="color: white">Submit</button>
-    </form>
-    <footer>
-      <h2>©2024 Made from Planet Team 3 - Technigo</h2>
-    </footer>
+      </section>
+      <section class="form-wrapper">
+        <form action="http://httpbin.org/anything" method="post">
+          <div class="ow1">
+            <div class="name-wrapper">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              /><label for="name">Your name</label>
+            </div>
+            <div class="email-wrapper">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              /><label for="email">Your Email</label>
+            </div>
+          </div>
+          <div class="ow2">
+            <div class="phone-wrapper">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="+41 79 528 78 56"
+                required
+              /><label for="phone">Your Phone Number</label>
+            </div>
+            <div class="genre-wrapper">
+              <select name="genre-dropdown" id="genreDropdown">
+                <option disabled selected>Choose your favourite</option>
+                <option value="Polka Punk">Polka Punk</option>
+                <option value="Space Jazz">Space Jazz</option>
+                <option value="Banjo Techno">Banjo Techno</option>
+                <option value="Unicorn Pop">Unicorn Pop</option>
+                <option value="Space Jazz">Space Jazz</option>
+              </select>
+              <label for="genreDropdown">Choose an option</label>
+            </div>
+          </div>
+          <div class="textarea-wrapper">
+            <label for="textArea"> Why your choice?</label>
+            <textarea
+              placeholder="Write some text"
+              name="textArea"
+              id="textArea"
+              cols="50"
+              rows="2"
+              required
+            ></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <h1>Concert Attire Preferences</h1>
+            <div class="checkbox-options">
+              <label class="checkbox-container" for="element1"
+                >Disco Ball Helmet
+                <input
+                  checked
+                  type="checkbox"
+                  id="element1"
+                  name="element1"
+                  value="Disco Ball Helmet"
+                />
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-container">
+                Superhero Cape <input type="checkbox" value="Superhero Cape" />
+                <span class="custom-checkbox"></span>
+              </label>
+              <label class="checkbox-container" for="element3"
+                >Viking Helmet
+                <input
+                  type="checkbox"
+                  name="element3"
+                  id="element3"
+                  value="Viking Helmet"
+                />
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" name="submitButton" id="submitButton">
+            Send
+          </button>
+          <button type="reset" name="resetButton" id="resetButton">
+            Reset
+          </button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
